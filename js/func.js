@@ -25,12 +25,6 @@ function changeWhenGone(title_name, icon_path)
             setIco(icon_path);
         }, 750);
     }
-
-    window.onload = function ()
-    {
-        document.title = title_name;
-        setIco(icon_path);
-    }
 }
 
 function locateUrl(url_path)
@@ -38,10 +32,10 @@ function locateUrl(url_path)
     window.location = url_path;
 }
 
-function ifIos()
+function ifMobile()
 {
-    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
+    if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i))
     {
-        window.location = "ios_index.html";
+        window.location = "mobile.html";
     }
 }
