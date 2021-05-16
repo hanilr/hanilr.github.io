@@ -1,9 +1,10 @@
-changeWhenGone("Snake!", "img/index.ico");
-
-ifIos();
+ifMobile();
 
 window.onload=function() 
 {
+    document.title = "Snake!";
+    setIco("img/index.ico");
+
     canv = document.getElementById("gameFrame");
     ctx = canv.getContext("2d");
     document.addEventListener("keydown", keyPush);
@@ -47,7 +48,7 @@ function game()
     ctx.fillStyle = "#007bfd";
     for(var i=0; i < trail.length; i++) 
     {
-        ctx.fillRect(trail[i].x*gs, trail[i].y*gs, gs-2, gs-2);
+        ctx.fillRect(trail[i].x*gs, trail[i].y*gs, 20, 20);
 
         if(trail[i].x == px && trail[i].y == py) 
         {
@@ -68,7 +69,7 @@ function game()
         ay = Math.floor(Math.random() * tc);
     }
     ctx.fillStyle = "#161616";
-    ctx.fillRect(ax*gs, ay*gs, gs-2, gs-2);
+    ctx.fillRect(ax*gs, ay*gs, 20, 20);
 }
 
 function keyPush(evt) 
