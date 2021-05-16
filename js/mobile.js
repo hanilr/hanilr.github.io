@@ -1,7 +1,8 @@
-changeWhenGone("Snake!", "img/index.ico");
-
 window.onload=function() 
 {
+    document.title = "Snake!";
+    setIco("img/index.ico");
+
     canv = document.getElementById("gameFrame");
     ctx = canv.getContext("2d");
     document.getElementById("button_up").addEventListener("touchstart", key_up);
