@@ -1,3 +1,5 @@
+changeWhenGone("Snake!", "img/index.ico");
+
 window.onload=function() 
 {
     document.title = "Snake!";
