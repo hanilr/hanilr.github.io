@@ -1,9 +1,8 @@
-changeWhenGone("Snake!", "img/index.ico");
-
 window.onload=function() 
 {
     document.title = "Snake!";
     setIco("img/index.ico");
+    changeWhenGone("Snake!", "img/index.ico");
 
     canv = document.getElementById("gameFrame");
     ctx = canv.getContext("2d");
