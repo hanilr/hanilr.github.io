@@ -1,3 +1,5 @@
+changeWhenGone("Snake!", "img/index.ico");
+
 ifMobile();
 
 window.onload=function() 
