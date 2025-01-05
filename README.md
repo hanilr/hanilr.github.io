@@ -1,0 +1,1 @@
+Simple snake game for browser, made in javascript.
